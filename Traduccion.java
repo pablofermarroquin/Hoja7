@@ -16,14 +16,12 @@ class Traduccion
             LeerArchivoDictionary();
             LeerArchivoText();
             
-            //MostrarInOrder();
             Traducir();
         }
         catch (Exception e)
         {
             
         }
-        //LeerArchivoDictionary();
         
     }
     
@@ -36,15 +34,14 @@ class Traduccion
             linea=linea.toLowerCase();
             PrepararAssociations(linea);
         }
-        //System.out.println("Termino LeerArchivoDictionary");
-        //PrepararAssociations("(house, casa)");
+
     }
 
     private void LeerArchivoText() throws Exception
     {
         BufferedReader br = new BufferedReader(new FileReader("text.txt"));
         textoEnEspanol = br.readLine();
-        //System.out.println("Termino LeerArchivoText");
+
     }
 
     private void PrepararAssociations(String linea)
@@ -52,11 +49,7 @@ class Traduccion
         linea=linea.substring(1, linea.length()-1);
         String[] par= linea.split(", ");
        
-        //System.out.println(par[0]);
-        //asociaciones.InsertNewAssociation(par[0], par[1]);
-        //System.out.println("Paso el NEW");
         arbol.Insertar(par[0], par[1]);
-        //System.out.println("Termino PrepararAsso");
     }
 
     private void Traducir()

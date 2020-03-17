@@ -7,7 +7,7 @@ class Nodo
     public String traduccion;
     private Association<String, String> association;
  
-    Nodo(String valor, String PalabraEspanol) 
+    Nodo(String valor, String PalabraEspanol) //Referencia tomada de: https://www.baeldung.com/java-binary-tree
     {
         this.valor = valor;
         der = null;

@@ -1,3 +1,9 @@
+/*
+Programador: Pablo Marroquin
+Carne: 19077
+Programa: Traductor con arboles binarios
+*/
+
 class Main
 {
     public static void main(String[] args)

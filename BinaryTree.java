@@ -37,7 +37,6 @@ class BinaryTree<E>
             return "*"+valor+"*";
         } 
 
-        //System.out.println("Se comparo "+valor+" con "+actual.valor);
         if (valor.equals(actual.valor)) {
             return actual.traduccion;
         } 
@@ -56,19 +55,15 @@ class BinaryTree<E>
         printInorder(raiz);
     }
 
-    void printInorder(Nodo nodo) 
+    void printInorder(Nodo nodo)  //Referece from: https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/
     { 
         if (nodo == null) 
             return; 
-  
-        /* first recur on izq child */
+
         printInorder(nodo.izq); 
-  
-        /* then print the data of nodo */
 
         System.out.print(nodo.valor+" "); 
   
-        /* now recur on der child */
         printInorder(nodo.der); 
     } 
 
