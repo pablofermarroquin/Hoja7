@@ -68,11 +68,13 @@ class Traduccion
         {
             output+=arbol.Buscar(palabras[i])+" ";
         }
-        System.out.println(output+".");
+        System.out.println("Traduccion:");
+        System.out.println(output+".\n");
     }
 
     public void MostrarInOrder()
     {
+        System.out.println("Recorrido InOrder:");
         arbol.InOrder();
     }
 
