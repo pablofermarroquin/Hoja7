@@ -2,6 +2,7 @@
 class BinaryTree<E>
 {
     Nodo raiz;
+    public int size=0;
 
     private Nodo InsertarRecursivo(Nodo actual, String valor, String PalabraEspanol) //Reference from: https://www.baeldung.com/java-binary-tree
     {
@@ -26,6 +27,7 @@ class BinaryTree<E>
     public void Insertar(String valor, String PalabraEspanol) //Reference from: https://www.baeldung.com/java-binary-tree
     {
         raiz = InsertarRecursivo(raiz, valor, PalabraEspanol);
+        size++;
     }
 
     

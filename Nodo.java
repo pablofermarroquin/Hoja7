@@ -5,6 +5,7 @@ class Nodo
     public Nodo izq;
     public Nodo der;
     public String traduccion;
+    private Association<String, String> association;
  
     Nodo(String valor, String PalabraEspanol) 
     {
@@ -12,5 +13,8 @@ class Nodo
         der = null;
         izq = null;
         traduccion=PalabraEspanol;
+        association= new Association<String, String>();
+        association.key=valor;
+        association.value=PalabraEspanol;
     }
 }
